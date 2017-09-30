@@ -18,6 +18,7 @@
 #===============================================================================
 
 set -o nounset                              # Treat unset variables as an error
+sudo xcodebuild -license accept
 brew install mas
 mas list
 mas install $(mas search Numbers | ggrep -P  "^\d+ Numbers$" | awk '{print $1}') &

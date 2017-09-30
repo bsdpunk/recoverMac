@@ -21,3 +21,5 @@ set -o nounset                              # Treat unset variables as an error
 brew install mas
 mas list
 mas install $(mas search Numbers | ggrep -P  "^\d+ Numbers$" | awk '{print $1}')
+mas install $(mas search Keynote | ggrep -P  "^\d+ Keynote$" | awk '{print $1}')
+mas install $(mas search Pages | ggrep -P  "^\d+ Pages$" | awk '{print $1}')

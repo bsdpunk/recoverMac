@@ -19,8 +19,10 @@
 
 set -o nounset                              # Treat unset variables as an error
 sudo xcodebuild -license accept
-brew install mas
+#brew install mas
 mas list
-mas install $(mas search Numbers | ggrep -P  "^\d+ Numbers$" | awk '{print $1}') &
-mas install $(mas search Keynote | ggrep -P  "^\d+ Keynote$" | awk '{print $1}') &
-mas install $(mas search Pages | ggrep -P  "^\d+ Pages$" | awk '{print $1}') &
+#mas install $(mas search Numbers | ggrep -P  "^\d+ Numbers$" | awk '{print $1}') &
+#mas install $(mas search Keynote | ggrep -P  "^\d+ Keynote$" | awk '{print $1}') &
+#mas install $(mas search Pages | ggrep -P  "^\d+ Pages$" | awk '{print $1}') &
+text="Pages\nKeynote\nNumbers"
+for i in $(echo -e $text); do mas install $(mas search $i | ggrep -P  "^\d+ $i$" | awk '{print $1}') ; done

@@ -17,6 +17,11 @@ brew install nvm
 source ~/.bash_profile
 nvm install node
 npm install -g bower grunt-cli jshint
+wget https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg
+open googlechrome.dmg
+cp /Volumes/Google\ Chrome/Google\ Chrome.app/ /Applications/
+cp -R /Volumes/Google\ Chrome/Google\ Chrome.app/ /Applications/
+sudo cp -R /Volumes/Google\ Chrome/Google\ Chrome.app/ /Applications/
 echo "Install XCode Full"
 echo "Install XCode Full"
 

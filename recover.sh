@@ -7,3 +7,7 @@ brew install gnu-sed
 brew install wget
 brew install grep
 cd Downloads && wget https://iterm2.com/downloads/stable/iTerm2-3_0_10.zip && unzip iTerm2-3_0_10.zip
+mkdir ~/go
+go get -d github.com/bsdpunk/beastietools
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+cp ~/git/dotfiles/.vimrc ~/;

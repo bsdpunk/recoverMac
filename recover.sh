@@ -11,3 +11,5 @@ mkdir ~/go
 go get -d github.com/bsdpunk/beastietools
 git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 cp ~/git/dotfiles/.vimrc ~/;
+echo "Install XCode Full"
+echo "Install XCode Full"

@@ -22,6 +22,7 @@ open googlechrome.dmg
 cp /Volumes/Google\ Chrome/Google\ Chrome.app/ /Applications/
 cp -R /Volumes/Google\ Chrome/Google\ Chrome.app/ /Applications/
 sudo cp -R /Volumes/Google\ Chrome/Google\ Chrome.app/ /Applications/
+cd ~/Downloads; wget https://prerelease.keybase.io/Keybase.dmg
 echo "Install XCode Full"
 echo "Install XCode Full"
 

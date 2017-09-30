@@ -20,4 +20,4 @@
 set -o nounset                              # Treat unset variables as an error
 brew install mas
 mas list
-
+mas install $(mas search Numbers | ggrep -P  "^\d+ Numbers$" | awk '{print $1}')

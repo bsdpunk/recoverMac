@@ -43,3 +43,5 @@ echo "Install XCode Full"
 echo "Install XCode Full"
 
 read -p "Press [Enter] key once Xcode Is installed..."
+
+bash  afterXcode.sh

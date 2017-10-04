@@ -23,6 +23,7 @@ read -p "Press [Enter] key when Xcode CLI is finished installing..."
  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)" && brew install gcc && brew install go --cross-compile-common  && brew install httpie;
  mkdir ~/git; cd ~/git; http https://api.github.com/users/bsdpunk/repos |python -m json.tool| grep '"name"' | awk -F: '{print $2}' | tr -d \" | tr -d , > repos; for i in $(cat repos); do git clone https://github.com/bsdpunk/$i; done  && cp ~/git/dotfiles/.bash_profile ~/;
 brew tap homebrew/science && brew tap Caskroom/cask &&  brew install coreutils gnu-sed wget nvm Caskroom/cask/iterm2 R htop
+brew install unrar transmission tesseract
 ## My go installs
 mkdir ~/go
 go get -d github.com/bsdpunk/beastietools
@@ -53,4 +54,6 @@ echo "Install XCode Full"
 
 read -p "Press [Enter] key once Xcode Is installed..."
 
+
 bash  afterXcode.sh
+

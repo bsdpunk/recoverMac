@@ -24,5 +24,5 @@ mas list
 #mas install $(mas search Numbers | ggrep -P  "^\d+ Numbers$" | awk '{print $1}') &
 #mas install $(mas search Keynote | ggrep -P  "^\d+ Keynote$" | awk '{print $1}') &
 #mas install $(mas search Pages | ggrep -P  "^\d+ Pages$" | awk '{print $1}') &
-text="Pages\nKeynote\nNumbers\nGarageBand"
+text="Pages\nKeynote\nNumbers\nGarageBand\nKindle"
 for i in $(echo -e $text); do mas install $(mas search $i | ggrep -P  "^\d+ $i$" | awk '{print $1}') & done

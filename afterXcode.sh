@@ -22,4 +22,5 @@ sudo xcodebuild -license accept
 #brew install mas
 mas list
 text="Pages\nKeynote\nNumbers\nGarageBand\nKindle"
-for i in $(echo -e $text); do mas install $(mas search $i | ggrep -P  "^\d+ $i$" | awk '{print $1}') & done
+#for i in $(echo -e $text); do mas install $(mas search $i | ggrep -P  "^\d+ $i$" | awk '{print $1}') & done
+for i in $(echo -e $text); do echo $i; mas install $(mas search $i |  grep -o  "[0-9]\+  $i" | awk '{print $1}') & done
